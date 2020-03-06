@@ -1,6 +1,8 @@
 # Curió Hoje 🐦 🎶
 Valor da cotação do **Curió (CØ)** comercial hoje, em relação o preço da Hilux.
 
+[https://curiohoje.com](https://curiohoje.com)
+
 ## Como contribuir
 [Abra uma issue](https://github.com/mvmjacobs/curio-hoje/issues).
 

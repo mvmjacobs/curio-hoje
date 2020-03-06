@@ -2,8 +2,9 @@ var inputCurio = getElementById('curio');
 var inputHilux = getElementById('hilux');
 var spans = [inputCurio.parentElement, inputHilux.parentElement];
 var isActivated = false;
+var dayVariation = 0;
 
-setInputsWidth();
+start();
 
 function getElementById(id) {
   return document.getElementById(id);
@@ -28,6 +29,22 @@ function formatMoney(amount) {
   }
 };
 
+function getDayVariation() {
+  var currentDate = new Date();
+  var today = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), 0, 0, 0, 0);
+  var time = today.getTime().toString();
+  time = time.substring(0, time.length - 5);
+  var factor = time.split('').reduce(function (sum, value) { return sum += +value; }, 0);
+  dayVariation = Math.floor(Math.random() * factor) + 1;
+  dayVariation *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+}
+
+function start() {
+  getDayVariation();
+  setInputsWidth();
+  setValue(inputCurio, inputHilux);
+}
+
 function split(str, token) {
   var parts = str.split(token);
   if (parts[1] === undefined)
@@ -51,10 +68,7 @@ function setValue(currentEl, targetEl) {
     return;
   }
 
-  var hiluxPrice = 1;
-  var result = currentEl == inputHilux ? (value / hiluxPrice) : (value * hiluxPrice);
-  result = formatMoney(result);
-  targetEl.value = result;
+  targetEl.value = formatMoney(value + (value * (dayVariation / 100)));
 }
 
 function deactivateInputs() {

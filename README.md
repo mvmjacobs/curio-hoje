@@ -3,6 +3,9 @@ Valor da cotação do **Curió (CØ)** comercial hoje, em relação o preço da 
 
 [https://curiohoje.com](https://curiohoje.com)
 
+## Agradecimentos
+Obrigado [@rannysan](https://github.com/rannysan) e [@gabrielbemo](https://github.com/Gabrielbemo) pelas ideias que contribuiram para tirar esse projeto do papel.
+
 ## Como contribuir
 [Abra uma issue](https://github.com/mvmjacobs/curio-hoje/issues).
 

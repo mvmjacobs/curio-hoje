@@ -51,7 +51,7 @@ function setValue(currentEl, targetEl) {
     return;
   }
 
-  var hiluxPrice = 122590.00;
+  var hiluxPrice = 1;
   var result = currentEl == inputHilux ? (value / hiluxPrice) : (value * hiluxPrice);
   result = formatMoney(result);
   targetEl.value = result;

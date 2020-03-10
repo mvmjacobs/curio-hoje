@@ -69,7 +69,7 @@ body.activated .currency {
 .currency .symbol {
   display: inline-block;
   text-align: left;
-  width: 2.1em;
+  width: 3.1em;
 }
 
 .currency input {
@@ -118,8 +118,8 @@ input#hilux {
 
 @media (min-width: 239px) {
   .currency input {
-    min-width: 4.6em;
-    max-width: 4.6em;
+    min-width: 4em;
+    max-width: 4em;
   }
 }
 
@@ -129,15 +129,15 @@ input#hilux {
   }
 
   .currency input {
-    min-width: 4.7em;
-    max-width: 4.7em;
+    min-width: 4em;
+    max-width: 4em;
   }
 }
 
 @media (min-width: 319px) {
   .currency input {
-    min-width: 5.3em;
-    max-width: 5.3em;
+    min-width: 4em;
+    max-width: 4em;
   }
 }
 
@@ -146,6 +146,13 @@ input#hilux {
     font-size: 2em;
   }
 
+  .currency input {
+    min-width: 4.5em;
+    max-width: 4.5em;
+  }
+}
+
+@media (min-width: 424px) {
   .currency input {
     min-width: 5.5em;
     max-width: 5.5em;

@@ -29,9 +29,10 @@ body.activated .currency {
   align-items: center;
 }
 
-.header span {
+.header h1 {
   margin: 1em 0;
   font-size: 1.625em;
+  font-weight: 300;
 }
 
 .price {
@@ -52,7 +53,7 @@ body.activated .currency {
 }
 
 .currency {
-  color: #d8d8d8;
+  color: #919191;
   font-size: 3em;
   margin: 0 0.1em;
   padding: 0 0.07em 0.03em;
@@ -82,7 +83,7 @@ body.activated .currency {
 input#curio,
 input#hilux {
   border: 0;
-  color: #909090;
+  color: #575757;
   font-family: verdana;
   font-size: 1em;
   margin-left: 0.1em;

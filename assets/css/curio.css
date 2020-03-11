@@ -162,7 +162,6 @@ input#hilux {
 
 @media (min-width: 641px) {
   .currency {
-    color: #d8d8d8;
     float: none;
     clear: none;
     font-size: 3em;
